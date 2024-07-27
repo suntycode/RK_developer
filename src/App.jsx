@@ -17,6 +17,7 @@ function App() {
     <>
     <div className=' bg-bg_color flex justify-center items-center '>
     <div className=' max-w-[1024px]'>
+    
     <Routes>
     <Route path={ROUTES.HOME} element={<Home/>}     />
     <Route path={ROUTES.CONTACT} element={<Contact/>}     />
