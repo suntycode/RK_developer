@@ -1,11 +1,25 @@
 import './App.css'
-import Home from './components/home'
+
+import   "./assets/css/style.css"
+import   "./assets/css/responsive.css"
+import { Route, Router, Routes } from 'react-router-dom'
+import { ROUTES } from './routes'
+import Home from './pages/home'
 
 function App() {
  
 
   return (
-   <Home/>
+
+    <>
+    <Routes>
+    <Route path={ROUTES.HOME} element={<Home/>}     />
+    <Route path="*" element={<Home/>}     />
+    
+    
+    </Routes>
+</>
+
   )
 }
 
