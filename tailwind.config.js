@@ -17,7 +17,15 @@ export default {
         dark_green:"#55B6C2",
         light_gray:"#ABB2BF"
 
-      }
+      ,
+    },
+
+    fontSize:{
+      heading :"32px",
+      paragraph :"16px",
+      subheading:"24px"
+    }
+
     },
   },
   plugins: [],
