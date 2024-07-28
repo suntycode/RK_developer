@@ -62,7 +62,26 @@ export const  projects = [
 },
 ]
 
-
+export const skills = [
+    {
+        text:"language",
+        skills:["typescript","lua","python","javascript"]
+    },
+    {
+        text:"database",
+        skills:["sqlite","postgresql","mongo"]
+    },{
+        text:"tools",
+        skills:["vscode","neovim","linux","figma","xfce","arch","git","fontasome"]
+    },
+    {
+        text:"other",
+        skills:["html","css","ejs","scss","rest","jinja"]
+    },{
+        text:"framework",
+        skills:["react","vue","disnake","discord","flask","express.js"]
+    }
+]
 
   
 
