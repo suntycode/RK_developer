@@ -7,7 +7,8 @@ import dots from "../assets/images/Dots.png"
 import square from "../assets/images/Logo.png"
 import quote from "../assets/images/qoutes.png"
 import ProjectCard from '../components/projectCard'
-import { projects } from '../components/projects'
+import { projects, skills } from '../components/data'
+import SkillCard from '../components/skillCard'
 
 
 const Home = () => {
@@ -26,6 +27,10 @@ const Home = () => {
        width:"w-[402px]"
   }
 
+  let skillData = {
+    text:"language",
+    skills:["typescript","lua","python","javascript"]
+  }
 
 
 
@@ -87,6 +92,43 @@ const Home = () => {
  
  
  </section>
+
+  {/* section skill */}
+
+  <section className=' my-64'>
+  <div className=' flex items-center gap-x-8  my-12'> 
+  <h2 className=' text-white text-heading '><span className=' text-light_pink'>#</span>skills</h2>
+  <p className=' w-[511px] h-[1px] mt-1  bg-light_pink'></p>
+  </div>
+  
+  <div className=' flex  gap-x-8 justify-between' >
+  <div className=' w-[349px] h-[282px] relative '>
+  <img  className='absolute bottom-0 w-[113px]' src={square} alt="sqaure not load" loading='lazy' />
+  <img className='absolute  w-[63px] h-[63px]' src={dots} alt='dots not load' loading='lazy' />
+  <img className='absolute  w-[63px] h-[63px] right-28 bottom-20' src={dots} alt='dots not load' loading='lazy' />
+
+  <div  className=' absolute w-[86px] h-[86px] right-4 top-0 border border-l-light_gray'></div>
+  <div  className=' absolute w-[52px] h-[52px] right-0 bottom-8 border border-l-light_gray'></div>
+  
+  </div>
+  <div className=' grid grid-cols-3  gap-5'>
+  <div> <SkillCard skillData={skills[0]} /></div>
+  <div className=' flex flex-col gap-y-5'> 
+  <SkillCard skillData={skills[1]} />
+    <SkillCard  skillData={skills[3]}  />
+  </div>
+  <div className=' flex flex-col gap-y-5'>
+  <SkillCard  skillData={skills[2]}/>
+  <SkillCard  skillData={skills[4]}/>
+  </div>
+
+ 
+  
+  </div>
+  
+  </div>
+  
+  </section>
    
    </>
   )
