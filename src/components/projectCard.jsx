@@ -34,8 +34,6 @@ const ProjectCard = ({data,id}) => {
     <p className='  text-light_gray'>{data.subheading}</p>
     <div className=' flex gap-2'>
     {data.buttons.map((btn,index)=> <CardBtn  key={index} btn={btn} />)}
-   
- 
     </div>
     </div>
     </div>

@@ -83,6 +83,121 @@ export const skills = [
     }
 ]
 
+export const SmallProject = [
+    {
+      skills:["Discord.js","TS","JS"],
+      title:"Bot boilerplate",
+      subheading:"Start creating scalable discord.js bot with typescript in seconds",
+      buttons:[
+        {
+          text: "Github",
+          icon: "<~>",
+          border_color: "light_pink",
+          href: "",
+          text_color: "white",
+        },
+      ],
+    },
+    {
+      skills:["VUE","CSS","JS"],
+      title:"My blog",
+      subheading:"Front-end of my future blog website written in vue",
+      buttons:[
+        {
+          text: "Github",
+          icon: "<~>",
+          border_color: "light_pink",
+          href: "",
+          text_color: "white",
+      },
+    ],
+    },
+    {
+      skills:"Figma",
+      title:"Chess pro",
+      subheading:"Figma landing page about service for viewing chess tournaments",
+      buttons:[
+        {
+          text: "Figma",
+          icon: "<~>",
+          border_color: "light_pink",
+          href: "",
+          text_color: "white",
+      },
+    ],
+    },
+    {
+      skills:"Figma",
+      title:"Crash protect website",
+      subheading:"Figma template for website about anti-raid, anti-crash discord bot",
+      buttons:[
+        {
+          text: "Figma",
+          icon: "<~>",
+          border_color: "light_pink",
+          href: "",
+          text_color: "white",
+      },
+    ],
+    },
+    {
+      skills:["HTML","CSS"],
+      title:"CSS expirements",
+      subheading:"Collection of my different little projects in css",
+      buttons:[
+        {
+          text: "Live",
+          icon: "<~>",
+          border_color: "light_pink",
+          href: "",
+          text_color: "white",
+      },
+    ],
+    },
+    {
+      skills:["Lua","NeoVim"],
+      title:"Web Dev nvim config",
+      subheading:"Config for neovim perfect for web developer",
+      buttons:[
+        {
+          text: "Github",
+          icon: "<~>",
+          border_color: "light_pink",
+          href: "",
+          text_color: "white",
+      },
+    ],
+    },
+    {
+      skills:["Python","Quart","HTML"],
+      title:"Ooku",
+      subheading:"Simple link shortener with auth",
+      buttons:[
+        {
+          text: "Live",
+          icon: "<~>",
+          border_color: "light_pink",
+          href: "",
+          text_color: "white",
+      },
+    ],
+    },
+    {
+      skills:"Figma",
+      title:"School website",
+      subheading:"Figma template website for my school",
+      buttons:[
+        {
+          text: "Figma",
+          icon: "<~>",
+          border_color: "light_pink",
+          href: "",
+          text_color: "white",
+      },
+    ],
+    },
+  ];
+
   
 
 

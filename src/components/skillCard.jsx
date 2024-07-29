@@ -7,8 +7,6 @@ const SkillCard = ({skillData}) => {
     <div className=' flex flex-wrap'>
    {skillData.skills.map((skill,index)=> <span className=' text-light_gray font-normal text-subheading p-2' key={index}>{skill}</span>)}
     </div>
-    
-    
     </div>
   )
 }
