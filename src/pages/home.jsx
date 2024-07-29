@@ -179,29 +179,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Small-Project */}
-      <section ClassName=" my-40">
-      <div className=" flex items-center gap-x-8  my-12">
-          <h2 className=" text-white text-heading ">
-            <span className=" text-light_pink">#</span>small-projects
-          </h2>
-          <p className=" w-[511px] h-[1px] mt-1  bg-light_pink"></p>
-        </div>
-
-        <div className=" grid grid-cols-3  gap-5">
-            <div className=" flex flex-col gap-y-5">
-            <SmallProjectCard Data={SmallProject[0]}/>
-            </div>
-            {/* <div className=" flex flex-col gap-y-5">
-            <SmallProjectCard Data={SmallProject[5]}/>
-            <SmallProjectCard Data={SmallProject[6]}/>
-            </div>
-            <div className=" flex flex-col gap-y-5">
-            <SmallProjectCard Data={SmallProject[5]}/>
-            <SmallProjectCard Data={SmallProject[6]}/>
-            </div> */}
-          </div>
-      </section>
+     
 
       {/* section about */}
 

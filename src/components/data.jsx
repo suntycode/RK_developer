@@ -113,7 +113,7 @@ export const SmallProject = [
     ],
     },
     {
-      skills:"Figma",
+      skills:["Figma"],
       title:"Chess pro",
       subheading:"Figma landing page about service for viewing chess tournaments",
       buttons:[
@@ -127,7 +127,7 @@ export const SmallProject = [
     ],
     },
     {
-      skills:"Figma",
+      skills:["Figma"],
       title:"Crash protect website",
       subheading:"Figma template for website about anti-raid, anti-crash discord bot",
       buttons:[
@@ -183,7 +183,7 @@ export const SmallProject = [
     ],
     },
     {
-      skills:"Figma",
+      skills:["Figma"],
       title:"School website",
       subheading:"Figma template website for my school",
       buttons:[

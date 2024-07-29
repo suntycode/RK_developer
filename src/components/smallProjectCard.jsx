@@ -1,6 +1,9 @@
 import React from "react";
 import CardBtn from "./cardBtn";
 const SmallProjectCard = ({ Data }) => {
+
+  console.log("data", Data)
+
   return (
     <div className=" border border-light_gray text-light_gray w-[331px] h-fit font-semibold">
       <p className="  p-2 border border-light_gray border-b-1  border-r-0 border-l-0  border-t-0">
