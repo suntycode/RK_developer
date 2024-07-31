@@ -5,16 +5,18 @@ import SkillCard from '../components/skillCard'
 import dots from "../assets/images/Dots.png";
 import square from "../assets/images/Logo.png";
 import { skills } from '../components/data';
+import Heading from '../components/Heading';
 
 const About = () => {
   return (
     <>
     <Navbar/>
+    <Heading Topheading="about-me" Bottomheading="Who am i ?"/>
    {/* section about */}
 
    <section>
    <div className=" flex items-center gap-x-8  my-12">
-     <h2 className=" text-white text-heading ">
+     <h2 className=" text-white text-subheading ">
        <span className=" text-light_pink">#</span>about
      </h2>
      <p className=" w-[511px] h-[1px] mt-1  bg-light_pink"></p>
@@ -26,7 +28,7 @@ const About = () => {
 
  <section className=" my-40">
  <div className=" flex items-center gap-x-8  my-12">
-   <h2 className=" text-white text-heading ">
+   <h2 className=" text-white text-subheading ">
      <span className=" text-light_pink">#</span>skills
    </h2>
    <p className=" w-[511px] h-[1px] mt-1  bg-light_pink"></p>
