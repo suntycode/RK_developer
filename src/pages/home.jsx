@@ -12,7 +12,9 @@ import SkillCard from "../components/skillCard";
 import AboutCard from "../components/aboutCard";
 import Discord from "../assets/images/Vector.png";
 import Email from "../assets/images/Email.png";
-import SmallProjectCard from "../components/smallProjectCard";
+
+
+
 
 const Home = () => {
   let data = {
@@ -35,9 +37,8 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+    <Navbar />
       {/* section home */}
-
       <section className="flex  bg-bg_color my-16  justify-center items-center">
         <div className=" max-[537px] flex flex-col gap-y-6 ">
           <h3 className=" text-heading text-white  font-semibold">
