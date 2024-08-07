@@ -3,14 +3,18 @@ import Navbar from '../components/navbar'
 import { projects, SmallProject } from '../components/data'
 import ProjectCard from '../components/projectCard'
 import SmallProjectCard from '../components/smallProjectCard'
+import Heading from '../components/Heading'
 
 const Work = () => {
   return (
     <>
     <Navbar/>
+    <Heading 
+    Topheading = "projects" 
+    Bottomheading = "List of my projects"/>
     <section className=" my-30">
     <div className=" flex items-center gap-x-8  my-12">
-      <h2 className=" text-white text-heading ">
+      <h2 className=" text-white text-subheading ">
         <span className=" text-light_pink">#</span>projects
       </h2>
       <p className=" w-[511px] h-[1px] mt-1  bg-light_pink"></p>
@@ -26,7 +30,7 @@ const Work = () => {
    {/* Small-Project */}
    <section ClassName=" my-40">
    <div className=" flex items-center gap-x-8  my-12">
-       <h2 className=" text-white text-heading ">
+       <h2 className=" text-white text-subheading ">
          <span className=" text-light_pink">#</span>small-projects
        </h2>
        <p className=" w-[511px] h-[1px] mt-1  bg-light_pink"></p>
