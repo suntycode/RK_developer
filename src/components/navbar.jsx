@@ -5,7 +5,7 @@ import logoImg from "../assets/images/Logo2.png";
 
 const Navbar = () => {
   return (
-    <nav className=" w-[1024px]  flex  justify-between  pt-[32px] pb-[8px] px-6    bg-bg_color">
+    <nav className="   flex  justify-between   pt-[32px] pb-[8px] px-6    bg-bg_color">
       <Link to={ROUTES.HOME}>
         {" "}
         <div className="flex justify-center items-center gap-x-3">

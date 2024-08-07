@@ -21,9 +21,9 @@ export default {
     },
 
     fontSize:{
-      heading :"32px",
-      paragraph :"16px",
-      subheading:"24px"
+      heading :"2rem",
+      paragraph :"1rem",
+      subheading:"1.5rem"
     }
 
     },

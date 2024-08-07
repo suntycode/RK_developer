@@ -10,8 +10,8 @@ import ProjectCard from "../components/projectCard";
 import { projects, skills, SmallProject } from "../components/data";
 import SkillCard from "../components/skillCard";
 import AboutCard from "../components/aboutCard";
-import Discord from "../assets/images/Vector.png";
-import Email from "../assets/images/Email.png";
+
+import ContactSection from "../components/contactSection";
 
 
 
@@ -37,10 +37,12 @@ const Home = () => {
 
   return (
     <>
-    <Navbar />
+ 
+      <section className="bg-bg_color p-5 "> 
+       <Navbar />
       {/* section home */}
-      <section className="flex  bg-bg_color my-16  justify-center items-center">
-        <div className=" max-[537px] flex flex-col gap-y-6 ">
+      <section className="flex w-full  my-16 justify-between  lg:flex-row  flex-col  items-center">
+        <div className=" lg:w-[40%]  max-w-10/12 flex flex-col gap-y-6 ">
           <h3 className=" text-heading text-white  font-semibold">
             Elies is a <span className="  text-light_pink">web designer</span>{" "}
             and <span className="  text-light_pink">front end developer</span>
@@ -50,8 +52,8 @@ const Home = () => {
           </p>
           <Button data={data} />
         </div>
-        <div className=" flex flex-col  items-center ">
-          <div className=" relative  h-[386px] w-[469px] ">
+        <div className=" flex flex-col   lg:w-[40%] items-center ">
+          <div className=" relative  h-[386px] ] w-full ">
             <img
               className=" absolute   z-20  "
               src={profileImg}
@@ -119,7 +121,7 @@ const Home = () => {
           <h2 className=" text-white text-heading ">
             <span className=" text-light_pink">#</span>projects
           </h2>
-          <p className=" w-[511px] h-[1px] mt-1  bg-light_pink"></p>
+          <p className=" w-[40%] h-[1px] mt-1  bg-light_pink"></p>
         </div>
 
         <div className=" flex gap-x-4 items-center justify-center">
@@ -136,11 +138,11 @@ const Home = () => {
           <h2 className=" text-white text-heading ">
             <span className=" text-light_pink">#</span>skills
           </h2>
-          <p className=" w-[511px] h-[1px] mt-1  bg-light_pink"></p>
+          <p className=" w-[40%] h-[1px] mt-1  bg-light_pink"></p>
         </div>
 
-        <div className=" flex  gap-x-8 justify-between">
-          <div className=" w-[349px] h-[282px] relative ">
+        <div className=" w-full flex  lg:gap-x-8 md:gap-x-5 justify-between">
+          <div className=" min-w-[30%] w-[300px] h-[282px] relative ">
             <img
               className="absolute bottom-0 w-[113px]"
               src={square}
@@ -163,19 +165,19 @@ const Home = () => {
             <div className=" absolute w-[86px] h-[86px] right-4 top-0 border border-l-light_gray"></div>
             <div className=" absolute w-[52px] h-[52px] right-0 bottom-8 border border-l-light_gray"></div>
           </div>
-          <div className=" grid grid-cols-3  gap-5">
-            <div>
-              {" "}
+          <div className=" grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-5">
+          
+         
               <SkillCard skillData={skills[0]} />
-            </div>
-            <div className=" flex flex-col gap-y-5">
+        
+            
               <SkillCard skillData={skills[1]} />
               <SkillCard skillData={skills[3]} />
-            </div>
-            <div className=" flex flex-col gap-y-5">
-              <SkillCard skillData={skills[2]} />
+        
               <SkillCard skillData={skills[4]} />
-            </div>
+              <SkillCard skillData={skills[2]} />
+          
+          
           </div>
         </div>
       </section>
@@ -189,7 +191,7 @@ const Home = () => {
           <h2 className=" text-white text-heading ">
             <span className=" text-light_pink">#</span>about
           </h2>
-          <p className=" w-[511px] h-[1px] mt-1  bg-light_pink"></p>
+          <p className=" w-[40%] h-[1px] mt-1  bg-light_pink"></p>
         </div>
 
         <AboutCard />
@@ -197,32 +199,11 @@ const Home = () => {
 
       {/* contact about */}
 
-      <section className=" my-32">
-        <div className=" flex items-center gap-x-8  my-12">
-          <h2 className=" text-white text-heading ">
-            <span className=" text-light_pink">#</span>contacts
-          </h2>
-          <p className=" w-[511px] h-[1px] mt-1  bg-light_pink"></p>
-        </div>
+      <ContactSection/>
 
-        <div className=" flex justify-between">
-          <p className=" text-white w-[505px]">
-            I’m interested in freelance opportunities. However, if you have
-            other request or question, don’t hesitate to contact me
-          </p>
-          <div className="border-solid border-2 h-32 p-3 ml-2 w-[242px] t ">
-            <p className="text-white ml-2 mb-2 ">Message me here</p>
-            <div className="flex mb-1 my-5">
-              <img src={Discord} alt="Discord" loading="lazy" className="h-5 m-1"/>
-              <p className="ml-3  text-light_gray">Elias#1234</p>
-            </div>
-            <div className="flex">
-              <img src={Email} alt="Email" loading="lazy" />
-              <p className="ml-3 mt-1 text-light_gray">elias@elias-dev.ml</p>
-            </div>
-          </div>
-        </div>
       </section>
+  
+  
     </>
   );
 };
